@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Landing Page */
+
+.landing-page {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?q=85&w=2000');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.landing-overlay {
+  min-height: 100vh;
+  padding: 30px 8%;
+  background: linear-gradient(90deg,
+      rgba(10, 30, 17, 0.88) 0%,
+      rgba(10, 30, 17, 0.65) 48%,
+      rgba(10, 30, 17, 0.15) 100%);
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-name {
+  font-family: Georgia, serif;
+  font-size: 27px;
+  letter-spacing: 1px;
+}
+
+.brand-tagline {
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero-content {
+  max-width: 650px;
+  margin: auto 0;
+  padding: 75px 0;
+}
+
+.hero-label {
+  color: #b9d9a9;
+  font-size: 13px;
+  letter-spacing: 4px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.hero-content h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(48px, 7vw, 82px);
+  line-height: 1.08;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.hero-description {
+  max-width: 480px;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #e1e9df;
+  margin-bottom: 35px;
+}
+
+.get-started-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 25px;
+  background: #d0e2b5;
+  color: #18351f;
+  text-decoration: none;
+  padding: 17px 28px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+
+.get-started-btn:hover {
+  background: white;
+  transform: translateY(-3px);
+}
+
+.get-started-btn span {
+  font-size: 22px;
+}
+
+.landing-footer {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #dce8d6;
+  padding-bottom: 10px;
+}
+
+/* About Us Page */
+
+.about-section {
+  min-height: 100vh;
+  background: #f4f7f0;
+  padding: 80px 8%;
+  color: #263d2a;
+}
+
+.about-content {
+  max-width: 850px;
+  margin: auto;
+}
+
+.about-label {
+  color: #668b55;
+  font-size: 13px;
+  letter-spacing: 4px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.about-content h1 {
+  font-family: Georgia, serif;
+  font-size: 45px;
+  margin-bottom: 25px;
+}
+
+.about-content h3 {
+  font-family: Georgia, serif;
+  font-size: 24px;
+  margin: 30px 0 12px;
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+.about-content ul {
+  padding-left: 25px;
+  line-height: 2.2;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+  .landing-overlay {
+    padding: 25px 6%;
+  }
+
+  .brand-name {
+    font-size: 21px;
+  }
+
+  .brand-tagline {
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+
+  .hero-content h1 {
+    font-size: 48px;
+  }
+
+  .hero-description {
+    font-size: 15px;
+  }
+
+  .about-content h1 {
+    font-size: 34px;
+  }
+}
