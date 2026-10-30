@@ -1,16 +1,105 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+# Paradise Nursery Shopping Application
 
-Currently, two official plugins are available:
+Paradise Nursery is a React-based online houseplant shopping application that allows users to explore different categories of indoor plants, add products to their shopping cart, manage quantities, and view their total purchase amount.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Attractive landing page with a Get Started button.
+- About Us page describing Paradise Nursery.
+- Product listing with 18 unique houseplants.
+- Three plant categories:
+  - Air Purifying Plants
+  - Indoor Decorative Plants
+  - Succulents and Cacti
+- Add plants to the shopping cart.
+- Prevent duplicate additions using button state.
+- Dynamic cart item count.
+- Increase and decrease product quantities.
+- Remove products from the cart.
+- Automatic subtotal and total amount calculation.
+- Continue Shopping navigation.
+- Responsive user interface.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies Used
 
-## Expanding the Oxlint configuration
+- React.js
+- Vite
+- JavaScript
+- CSS3
+- Redux Toolkit
+- React Redux
+- React Router DOM
+- Lucide React Icons
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Installation and Setup
+
+1. Clone the repository:
+
+   ```bash
+   git clone YOUR_GITHUB_REPOSITORY_URL
+   ```
+
+2. Navigate into the project:
+
+   ```bash
+   cd paradise-nursery
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open the local URL displayed in your terminal.
+
+## Project Structure
+
+```text
+paradise-nursery/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── AboutUs.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── ProductList.jsx
+│   │   ├── ProductList.css
+│   │   ├── CartItem.jsx
+│   │   └── CartItem.css
+│   ├── redux/
+│   │   ├── CartSlice.jsx
+│   │   └── store.js
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+├── README.md
+├── package.json
+└── vite.config.js
+```
+
+## Application Pages
+
+- Home: Introduction to Paradise Nursery.
+- About Us: Information about the nursery and its mission.
+- Plants: Browse and add houseplants to the cart.
+- Cart: Manage selected products and view order totals.
+
+## Future Improvements
+
+- User authentication.
+- Online payment integration.
+- Product search and filtering.
+- Order tracking.
+- Backend integration and database storage.
+
+## Author
+
+Raj Kale
